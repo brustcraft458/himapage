@@ -212,7 +212,7 @@
                         <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                             <div class="icon-box">
                                 <div class="icon"><i class="bx bx-file"></i></div>
-                                <h4><a href="">Sosial</a></h4>
+                                <h4><a href="<?=$rootdir?>/sosial">Sosial</a></h4>
                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                             </div>
                         </div>
@@ -389,36 +389,6 @@
                             </div>
                         </div>
                     @endforeach
-
-
-                    {{-- <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="box">
-                            <h4>UTD Seminar</h4>
-                            <ul>
-                                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-                            </ul>
-                            <a href="#" class="buy-btn">Akan Datang</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="box">
-                            <h4>IT Fest</h4>
-                            <ul>
-                                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-                            </ul>
-                            <a href="#" class="buy-btn">Akan Datang</a>
-                        </div>
-                    </div> --}}
-
                 </div>
 
             </div>

@@ -149,50 +149,28 @@
                 </div>
 
                 <div class="row">
-
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="box featured">
-                            <h4>Hiber</h4>
-                            <ul>
-                                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                            </ul>
-                            <a href="#" class=""></a>
-                            <button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#techoclub-form">Daftar Sekarang</button>
+                    @foreach ($eventList as $ev)
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="box <?= $ev['available'] ? 'featured' : '' ?>">
+                                <h4>{{ $ev['title'] }}</h4>
+                                <ul>
+                                    @foreach ($ev['checklist'] as $checklist)
+                                        @if ($checklist[0])
+                                            <li><i class="bx bx-check"></i>{{$checklist[1]}}</li>
+                                        @else
+                                            <li class="na"><i class="bx bx-x"></i><span>{{$checklist[1]}}</span></li>
+                                        @endif
+                                    @endforeach
+                                </ul>
+                                @if ($ev['available'])
+                                    <a href="<?= $ev['url'] ?>" class="buy-btn">Daftar Sekarang</a>
+                                @else
+                                    <a href="#" class="buy-btn">Akan Datang</a>
+                                @endif
+                                {{-- <button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#techoclub-form">Daftar Sekarang</button> --}}
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="box">
-                            <h4>Sportif</h4>
-                            <ul>
-                                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-                            </ul>
-                            <a href="#" class="buy-btn">Akan Datang</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="box">
-                            <h4>GK Tau</h4>
-                            <ul>
-                                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-                            </ul>
-                            <a href="#" class="buy-btn">Akan Datang</a>
-                        </div>
-                    </div>
-
+                    @endforeach
                 </div>
 
             </div>
@@ -208,143 +186,21 @@
                 </div>
 
                 <div class="row">
-
-                    <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Walter White</h4>
-                                <span>Ketua Himatif</span>
-                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    @foreach ($memberList as $member)
+                        <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="member d-flex align-items-start">
+                                <div class="pic"><img src="<?=$rootdir?>/assets/img/<?=$member['profileImage']?>" class="img-fluid" alt=""></div>
+                                <div class="member-info">
+                                    <h4>{{$member['name']}}</h4>
+                                    <span>{{$member['position']}}</span>
+                                    <p>{{$member['description']}}</p>
+                                    <div class="social">
+                                        <a href="<?=$member['instagramUrl']?>"><i class="ri-instagram-fill"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
-                                <span>Wakil Ketua Himatif</span>
-                                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>William Anderson</h4>
-                                <span>Sekum</span>
-                                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Wasekum</span>
-                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>William Anderson</h4>
-                                <span>Sekum</span>
-                                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Wasekum</span>
-                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>William Anderson</h4>
-                                <span>Sekum</span>
-                                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Wasekum</span>
-                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    @endforeach
                 </div>
 
             </div>

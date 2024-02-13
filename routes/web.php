@@ -72,10 +72,80 @@ Route::get('/miba', function () {
     $prokerList = [];
 
     // Data Event Miba
-    $eventList = [];
+    $eventList = [
+        [
+            "title" => "Sportif",
+            "available" => true,
+            "checklist" => [
+                [true, "Lorem lorem lorem"],
+                [true, "Lorem lorem lorem"],
+                [true, "Lorem lorem lorem"],
+                [false, "Lorem lorem lorem"],
+                [false, "Lorem lorem lorem"],
+            ],
+            "url" => ""
+        ],
+        [
+            "title" => "Event 2",
+            "available" => false,
+            "checklist" => [
+                [true, "Lorem lorem lorem"],
+                [true, "Lorem lorem lorem"],
+                [true, "Lorem lorem lorem"],
+                [false, "Lorem lorem lorem"],
+                [false, "Lorem lorem lorem"],
+            ],
+            "url" => ""
+        ],
+        [
+            "title" => "Tidak Tahu",
+            "available" => false,
+            "checklist" => [
+                [true, "Lorem lorem lorem"],
+                [true, "Lorem lorem lorem"],
+                [true, "Lorem lorem lorem"],
+                [false, "Lorem lorem lorem"],
+                [false, "Lorem lorem lorem"],
+            ],
+            "url" => ""
+        ]
+    ];
+
+    // Member List
+    $memberList = [
+        [
+            "name" => "Hello 1",
+            "position" => "Anggota",
+            "description" => "Quisquam facilis cum velit laborum corrupti fuga rerum quia",
+            "instagramUrl" => "",
+            "profileImage" => "team/team-3.jpg"
+        ],
+        [
+            "name" => "Hello 2",
+            "position" => "Anggota",
+            "description" => "Quisquam facilis cum velit laborum corrupti fuga rerum quia",
+            "instagramUrl" => "",
+            "profileImage" => "team/team-3.jpg"
+        ],
+        [
+            "name" => "Hello 3",
+            "position" => "Anggota",
+            "description" => "Quisquam facilis cum velit laborum corrupti fuga rerum quia",
+            "instagramUrl" => "",
+            "profileImage" => "team/team-3.jpg"
+        ],
+        [
+            "name" => "Hello 4",
+            "position" => "Anggota",
+            "description" => "Quisquam facilis cum velit laborum corrupti fuga rerum quia",
+            "instagramUrl" => "",
+            "profileImage" => "team/team-3.jpg"
+        ],
+    ];
 
     return view('home/depatermen', [
         "rootdir" => ".",
+        "memberList" => $memberList,
         "eventList" => $eventList,
         "depatermen" => $depatermen
     ]);
@@ -92,11 +162,77 @@ Route::get('/sosial', function () {
     // Data Proker
     $prokerList = [];
 
-    // Data Event Miba
-    $eventList = [];
+    // Data Event Sosial
+    $eventList = [
+        [
+            "title" => "Event 1",
+            "available" => true,
+            "checklist" => [
+                [true, "Lorem lorem lorem"],
+                [true, "Lorem lorem lorem"],
+                [true, "Lorem lorem lorem"],
+                [false, "Lorem lorem lorem"],
+                [false, "Lorem lorem lorem"],
+            ],
+            "url" => ""
+        ],
+        [
+            "title" => "Event 2",
+            "available" => false,
+            "checklist" => [
+                [true, "Lorem lorem lorem"],
+                [true, "Lorem lorem lorem"],
+                [true, "Lorem lorem lorem"],
+                [false, "Lorem lorem lorem"],
+                [false, "Lorem lorem lorem"],
+            ],
+            "url" => ""
+        ],
+        [
+            "title" => "Tidak Tahu",
+            "available" => false,
+            "checklist" => [
+                [true, "Lorem lorem lorem"],
+                [true, "Lorem lorem lorem"],
+                [true, "Lorem lorem lorem"],
+                [false, "Lorem lorem lorem"],
+                [false, "Lorem lorem lorem"],
+            ],
+            "url" => ""
+        ]
+    ];
 
     // Member List
-    $memberList = [];
+    $memberList = [
+        [
+            "name" => "Hello",
+            "position" => "Anggota",
+            "description" => "Quisquam facilis cum velit laborum corrupti fuga rerum quia",
+            "instagramUrl" => "",
+            "profileImage" => "team/team-3.jpg"
+        ],
+        [
+            "name" => "Hello 2",
+            "position" => "Anggota",
+            "description" => "Quisquam facilis cum velit laborum corrupti fuga rerum quia",
+            "instagramUrl" => "",
+            "profileImage" => "team/team-3.jpg"
+        ],
+        [
+            "name" => "Hello 3",
+            "position" => "Anggota",
+            "description" => "Quisquam facilis cum velit laborum corrupti fuga rerum quia",
+            "instagramUrl" => "",
+            "profileImage" => "team/team-3.jpg"
+        ],
+        [
+            "name" => "Hello 4",
+            "position" => "Anggota",
+            "description" => "Quisquam facilis cum velit laborum corrupti fuga rerum quia",
+            "instagramUrl" => "",
+            "profileImage" => "team/team-3.jpg"
+        ],
+    ];
 
     // Data Documentation Foto
     $documentationList = [];
@@ -104,6 +240,7 @@ Route::get('/sosial', function () {
     return view('home/depatermen', [
         "rootdir" => ".",
         "depatermen" => $depatermen,
+        "memberList" => $memberList,
         "eventList" => $eventList,
     ]);
 });
