@@ -1,0 +1,41 @@
+.gradient-pading {
+  position: relative;
+  mix-blend-mode: hard-light;
+}
+
+.gradient-pading::after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  background: linear-gradient(transparent, gray);
+}
+
+.scrollbar {
+  /* width: max-content; */
+  overflow-x: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 10%;
+  height: 3.5px;
+  background-color: #47b2e422;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #47b2e4c2;
+}
+
+@media (max-width: 994px) {
+  .scrollbar .box {
+    width: 94vw;
+  }
+}
