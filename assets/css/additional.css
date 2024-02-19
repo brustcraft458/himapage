@@ -1,9 +1,15 @@
-.gradient-pading {
-  position: relative;
-  mix-blend-mode: hard-light;
+.hero-video {
+  width: 560px;
+  height: 315px;
+  background-color: transparent;
 }
 
-.gradient-pading::after {
+.gradient-pading, .gradient-pading-sec {
+  position: relative;
+  /* mix-blend-mode: hard-light; */
+}
+
+.gradient-pading::after, .gradient-pading-sec::after {
   pointer-events: none;
   content: '';
   position: absolute;
@@ -12,15 +18,22 @@
   left: 0;
   bottom: 0;
   z-index: 5;
-  background: linear-gradient(transparent, gray);
+}
+
+.gradient-pading::after {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%, rgba(255, 255, 255, 1) 100%);
+}
+
+.gradient-pading-sec::after {
+  background: linear-gradient(90deg, rgba(243, 245, 250, 1) 0%, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%, rgba(243, 245, 250, 1) 100%);
+  /* background: rgb(243, 245, 250); */
 }
 
 .scrollbar {
-  /* width: max-content; */
   overflow-x: auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-bottom: 25px;
 }
 
@@ -35,6 +48,16 @@
 }
 
 @media (max-width: 994px) {
+  .hero-video {
+    width: 350px;
+    height: 197px;
+  }
+  
+  .scrollbar {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   .scrollbar .box {
     width: 94vw;
   }
