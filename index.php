@@ -25,44 +25,7 @@ $rootdir = ".";
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.html">Himatif</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-    </div>
-  </header><!-- End Header -->
+  <?php require_once("$rootdir/assets/component/header.php"); ?>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -72,9 +35,9 @@ $rootdir = ".";
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <h1>Himatif Kodingin</h1>
           <h2>
-          "Himatif salam koding..." adalah mantra yang menggema di ruang-ruang kuliah, laboratorium, dan komunitas-komunitas pengembang di seluruh penjuru. Itu lebih dari sekadar kata-kata; itu adalah simbol dari semangat kolaboratif, eksplorasi tak terbatas, dan dedikasi terhadap kemajuan teknologi.</h2>
+          Himatif salam koding adalah mantra yang menggema di ruang-ruang kuliah, laboratorium, dan komunitas-komunitas pengembang di seluruh penjuru. Itu lebih dari sekadar kata-kata, namun itu adalah simbol dari semangat kolaboratif, eksplorasi tak terbatas, dan dedikasi terhadap kemajuan teknologi.</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#pricing" class="btn-get-started scrollto">Lihat Event</a>
+            <a href="#pricing" class="btn-get-started scrollto">Lihat Layanan</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -93,13 +56,13 @@ $rootdir = ".";
       <div class="container">
         <div class="d-flex align-items-center justify-content-center" data-aos="zoom-in">
           <div class="">
-            <img src="assets/img/logo/fik.png" width="140" class="img-fluid" alt="">
+            <img src="<?=$rootdir?>/assets/img/logo/fik.png" width="140" class="img-fluid" alt="">
           </div>
           <div class="">
-            <img src="assets/img/logo/himatif.png" width="140" class="img-fluid" style="scale: 1.8" alt="">
+            <img src="<?=$rootdir?>/assets/img/logo/himatif.png" width="140" class="img-fluid" style="scale: 1.8" alt="">
           </div>
           <div class="">
-            <img src="assets/img/logo/ubp.png" width="140" class="img-fluid" alt="">
+            <img src="<?=$rootdir?>/assets/img/logo/ubp.png" width="140" class="img-fluid" alt="">
           </div>
         </div>
 
@@ -217,7 +180,7 @@ $rootdir = ".";
         <div class="gradient-pading">
           <div class="scrollbar d-flex flex-row gap-3 bd-highlight mb-3">
               <?php for ($x = 0; $x <= 10; $x++) : ?>
-              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="depatermen/test" data-aos="zoom-in" data-aos-delay="200">
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/penristek.php" data-aos="zoom-in" data-aos-delay="200">
                 <div class="box icon-box">
                   <div class="icon"><i class="bx bx-file"></i></div>
                   <h4>Penristek</h4>
@@ -264,63 +227,60 @@ $rootdir = ".";
     </section><!-- End Team Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <!--<section id="pricing" class="pricing">
+    <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Event Himatif</h2>
+          <h2>Layanan Himatif</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box featured">
-              <h4>Technoclub</h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class=""></a>
-              <button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#techoclub-form">Daftar Sekarang</button>
+        <div class="gradient-pading">
+          <div class="scrollbar d-flex flex-row gap-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="box featured">
+                <h4>Registrasi Event</h4>
+                <ul>
+                  <li><i class="bx bx-check"></i>Menambah Wawasan</li>
+                  <li><i class="bx bx-check"></i>Mendapatkan Sertifikat</li>
+                  <li class="na"><i class="bx bx-x"></i><span>Mendapatkan SK</span></li>
+                  <li><i class="bx bx-check"></i>Membangun Relasi</li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                </ul>
+                <a href="<?=$rootdir?>/redirect/event.php" class="buy-btn">Lihat Sekarang</a>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="box">
+                <h4>Oprec Kepanitian</h4>
+                <ul>
+                  <li><i class="bx bx-check"></i>Menambah Wawasan</li>
+                  <li><i class="bx bx-check"></i>Mendapatkan Sertifikat</li>
+                  <li><i class="bx bx-check"></i>Mendapatkan SK</li>
+                  <li><i class="bx bx-check"></i>Membangun Relasi</li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                </ul>
+                <a href="<?=$rootdir?>/redirect/panitia.php" class="buy-btn">Lihat Sekarang</a>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="box">
+                <h4>Himatif Store</h4>
+                <ul>
+                  <li><i class="bx bx-check"></i>Mendapatkan PDH</li>
+                  <li><i class="bx bx-check"></i>Mendapatkan Merchandines</li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Nulla at volutpat diam uteera</span></li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                </ul>
+                <a href="<?=$rootdir?>/redirect/store.php" class="buy-btn">Lihat Sekarang</a>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box">
-              <h4>UTD Seminar</h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Akan Datang</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h4>IT Fest</h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Akan Datang</a>
-            </div>
-          </div>
-
         </div>
 
       </div>
-    </section>--><!-- End Pricing Section -->
+    </section><!-- End Pricing Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -391,48 +351,6 @@ $rootdir = ".";
 
       </div>
     </section><!-- End Contact Section -->
-
-    <div>
-      <!-- Modal -->
-      <div class="modal fade" id="techoclub-form" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <form action="" method="POST" class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title">Saran</h5>
-                      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body">
-                      <div>
-                        <div class="form-group">
-                            <label for="nik" class="col-form-label">NIM:</label>
-                            <div class="d-flex flex-row align-items-center" id="fgroup-saran-nik">
-                                <input type="number" class="form-control text-uppercase" id="nik" name="nik">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="nama" class="col-form-label">Nama Lengkap:</label>
-                            <div class="d-flex flex-row align-items-center" id="fgroup-saran-nama">
-                                <input type="text" class="form-control text-uppercase" id="nama" name="nama">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="nama" class="col-form-label">Nomor HP:</label>
-                            <div class="d-flex flex-row align-items-center" id="fgroup-saran-nama">
-                                <input type="text" class="form-control text-uppercase" id="nama" name="nama">
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                      <button type="submit" class="btn btn-primary" name="send-saran" value="saran">Kirim</button>
-                  </div>
-              </form>
-          </div>
-      </div>
-    </div>
 
   </main><!-- End #main -->
 
