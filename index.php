@@ -9,7 +9,7 @@ $rootdir = ".";
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Arsha Bootstrap Template - Index</title>
+  <title>Himatif Page</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -25,44 +25,7 @@ $rootdir = ".";
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.html">Himatif</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-    </div>
-  </header><!-- End Header -->
+  <?php require_once("$rootdir/assets/component/header.php"); ?>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -70,16 +33,16 @@ $rootdir = ".";
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Himatif Mengkodingkan</h1>
+          <h1>Himatif Kodingin</h1>
           <h2>
-          "Himatif salam koding..." adalah mantra yang menggema di ruang-ruang kuliah, laboratorium, dan komunitas-komunitas pengembang di seluruh penjuru. Itu lebih dari sekadar kata-kata; itu adalah simbol dari semangat kolaboratif, eksplorasi tak terbatas, dan dedikasi terhadap kemajuan teknologi.</h2>
+          Himatif salam koding adalah mantra yang menggema di ruang-ruang kuliah, laboratorium, dan komunitas-komunitas pengembang di seluruh penjuru. Itu lebih dari sekadar kata-kata, namun itu adalah simbol dari semangat kolaboratif, eksplorasi tak terbatas, dan dedikasi terhadap kemajuan teknologi.</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#pricing" class="btn-get-started scrollto">Lihat Event</a>
-            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+            <a href="#pricing" class="btn-get-started scrollto">Lihat Layanan</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="<?=$rootdir?>/assets/img/hero-img.png" class="img-fluid animated" alt="">
+          <!-- <img src="<?=$rootdir?>/assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
+          <iframe class="hero-video img-fluid rounded-3" src="https://www.youtube.com/embed/1b025-rE5e4?si=wMmibozWgy6yqeoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -91,7 +54,16 @@ $rootdir = ".";
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients section-bg">
       <div class="container">
-        <div class="row" data-aos="zoom-in">
+        <div class="d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <div class="">
+            <img src="<?=$rootdir?>/assets/img/logo/fik.png" width="140" class="img-fluid" alt="">
+          </div>
+          <div class="">
+            <img src="<?=$rootdir?>/assets/img/logo/himatif.png" width="140" class="img-fluid" style="scale: 1.8" alt="">
+          </div>
+          <div class="">
+            <img src="<?=$rootdir?>/assets/img/logo/ubp.png" width="140" class="img-fluid" alt="">
+          </div>
         </div>
 
       </div>
@@ -141,35 +113,47 @@ $rootdir = ".";
             <div class="content">
               <h3><strong>Visi Misi</strong></h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Meningkatkan peran HIMATIF sebagai wadah yang
+                aktif dan responsif, guna meningkatkan pengalaman
+                akademik serta untuk menampung dan menyalurkan
+                aspirasi mahasiswa teknik informatika
               </p>
             </div>
 
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Menjadi jembatan akademik <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                     <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                      Menjadi jembatan bagi mahasiswa untuk meningkatkan potensi akademik
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Memaksimalkan wadah aspirasi <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                      Memaksimalkan peran HIMATIF sebagai wadah dalam menampung dan menyalurkan aspirasi mahasiswa Teknik Informatika
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Menjalin Kerja Sama Dosen <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                      Menjalin Kerja Sama yang Baik Kepada Dosen dan Mahasiswa
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> Mendukung peningkatan akademik <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Menjadikan HIMATIF sebagai wadah untuk mendukung peningkatan bidang akademik serta non-akademi
                     </p>
                   </div>
                 </li>
@@ -179,7 +163,7 @@ $rootdir = ".";
 
           </div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("<?=$rootdir?>/assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("<?=$rootdir?>/assets/img/logo/gantari.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
         </div>
 
       </div>
@@ -189,81 +173,68 @@ $rootdir = ".";
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
+        <div class="section-title py-0">
           <h2>Depatermen Himatif</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <div>
-          <div class="row mb-3">
-            <a href="<?=$rootdir?>/web/depatermen/miba.php">
-              <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box">
-                  <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                  <h4><a href="">Miba</a></h4>
-                  <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+        <div class="gradient-pading">
+          <div class="scrollbar d-flex flex-row gap-3 bd-highlight mb-3">
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/penristek" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>Penristek</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                 </div>
-              </div>
-            </a>
-
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4><a href="">Sosial</a></h4>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-tachometer"></i></div>
-                <h4><a href="">Penristek</a></h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-layer"></i></div>
-                <h4><a href="">KWU</a></h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                <h4><a href="">PSDMO</a></h4>
-                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-              </div>
-            </div>
-  
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4><a href="">Humas</a></h4>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-              </div>
-            </div>
-  
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-tachometer"></i></div>
-                <h4><a href="">Medinfo</a></h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-              </div>
-            </div>
-  
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-layer"></i></div>
-                <h4><a href="">Pasif</a></h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-              </div>
-            </div>
-  
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/miba" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>Miba</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>Sosial</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>KWU</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>PSDMO</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>Humas</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>Medinfo</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>Pasif</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
           </div>
         </div>
 
@@ -274,81 +245,29 @@ $rootdir = ".";
     <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Pemimpin Himatif</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <div class="section-title py-0">
+          <h2>Ketua Himatif</h2>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Ketua Himatif</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+        <div class="gradient-pading-sec">
+          <div class="scrollbar d-flex flex-row gap-3">
+            <?php for ($x = 0; $x <= 10; $x++) : ?>
+              <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box member d-flex align-items-start">
+                  <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Sarah Jhonson</h4>
+                    <span>Ketua Himatif</span>
+                    <p>Tetap hidup meskipun digidaw biskuit ahoy</p>
+                    <div class="social">
+                      <a href="https://instagram.com/"><i class="ri-instagram-fill"></i></a>
+                      <a href="mailto:namaorang@mhs.ubpkarawang.ac.id?subject=Himatif Page"> <i class="ri-mail-fill"></i> </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            <?php endfor;?>
           </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Wakil Ketua Himatif</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Sekum</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Wasekum</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>
@@ -359,55 +278,52 @@ $rootdir = ".";
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Event Himatif</h2>
+          <h2>Layanan Himatif</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box featured">
-              <h4>Technoclub</h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class=""></a>
-              <button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#techoclub-form">Daftar Sekarang</button>
+        <div class="gradient-pading">
+          <div class="scrollbar d-flex flex-row gap-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="box featured">
+                <h4>Registrasi Event</h4>
+                <ul>
+                  <li><i class="bx bx-check"></i>Menambah Wawasan</li>
+                  <li><i class="bx bx-check"></i>Mendapatkan Sertifikat</li>
+                  <li class="na"><i class="bx bx-x"></i><span>Mendapatkan SK</span></li>
+                  <li><i class="bx bx-check"></i>Membangun Relasi</li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                </ul>
+                <a href="<?=$rootdir?>/redirect/event.php" class="buy-btn">Lihat Sekarang</a>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="box">
+                <h4>Oprec Kepanitian</h4>
+                <ul>
+                  <li><i class="bx bx-check"></i>Menambah Wawasan</li>
+                  <li><i class="bx bx-check"></i>Mendapatkan Sertifikat</li>
+                  <li><i class="bx bx-check"></i>Mendapatkan SK</li>
+                  <li><i class="bx bx-check"></i>Membangun Relasi</li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                </ul>
+                <a href="<?=$rootdir?>/redirect/panitia.php" class="buy-btn">Lihat Sekarang</a>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="box">
+                <h4>Himatif Store</h4>
+                <ul>
+                  <li><i class="bx bx-check"></i>Mendapatkan PDH</li>
+                  <li><i class="bx bx-check"></i>Mendapatkan Merchandines</li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Nulla at volutpat diam uteera</span></li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                </ul>
+                <a href="<?=$rootdir?>/redirect/store.php" class="buy-btn">Lihat Sekarang</a>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box">
-              <h4>UTD Seminar</h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Akan Datang</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h4>IT Fest</h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Akan Datang</a>
-            </div>
-          </div>
-
         </div>
 
       </div>
@@ -429,7 +345,7 @@ $rootdir = ".";
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>JL. HS.Ronggo Waluyo, Karawang, Jawa Barat</p>
               </div>
 
               <div class="email">
@@ -444,7 +360,7 @@ $rootdir = ".";
                 <p>+1 5589 55488 55s</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.54042985124!2d107.2986690246002!3d-6.3239293936655505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69762d4c316603%3A0x50a8005dfd52a897!2sUniversitas%20Buana%20Perjuangan%20Karawang!5e0!3m2!1sid!2sid!4v1707465945600!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
 
           </div>
@@ -483,53 +399,11 @@ $rootdir = ".";
       </div>
     </section><!-- End Contact Section -->
 
-    <div>
-      <!-- Modal -->
-      <div class="modal fade" id="techoclub-form" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <form action="" method="POST" class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title">Saran</h5>
-                      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body">
-                      <div>
-                        <div class="form-group">
-                            <label for="nik" class="col-form-label">NIM:</label>
-                            <div class="d-flex flex-row align-items-center" id="fgroup-saran-nik">
-                                <input type="number" class="form-control text-uppercase" id="nik" name="nik">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="nama" class="col-form-label">Nama Lengkap:</label>
-                            <div class="d-flex flex-row align-items-center" id="fgroup-saran-nama">
-                                <input type="text" class="form-control text-uppercase" id="nama" name="nama">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="nama" class="col-form-label">Nomor HP:</label>
-                            <div class="d-flex flex-row align-items-center" id="fgroup-saran-nama">
-                                <input type="text" class="form-control text-uppercase" id="nama" name="nama">
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                      <button type="submit" class="btn btn-primary" name="send-saran" value="saran">Kirim</button>
-                  </div>
-              </form>
-          </div>
-      </div>
-    </div>
-
   </main><!-- End #main -->
 
   <?php require_once("$rootdir/assets/component/footer.php"); ?>
 
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <?php require_once("$rootdir/assets/component/footer-res.php"); ?>

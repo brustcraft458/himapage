@@ -1,5 +1,5 @@
 <?php
-$rootdir = "../";
+$rootdir = "../..";
 ?>
 
 <!DOCTYPE html>

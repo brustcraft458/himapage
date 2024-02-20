@@ -13,3 +13,4 @@
 <link href="<?=$rootdir?>/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 <!-- Template Main CSS File -->
 <link href="<?=$rootdir?>/assets/css/style.css" rel="stylesheet">
+<link href="<?=$rootdir?>/assets/css/additional.css" rel="stylesheet">
