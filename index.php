@@ -179,15 +179,62 @@ $rootdir = ".";
 
         <div class="gradient-pading">
           <div class="scrollbar d-flex flex-row gap-3 bd-highlight mb-3">
-              <?php for ($x = 0; $x <= 10; $x++) : ?>
-              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/penristek.php" data-aos="zoom-in" data-aos-delay="200">
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/penristek" data-aos="zoom-in" data-aos-delay="200">
                 <div class="box icon-box">
                   <div class="icon"><i class="bx bx-file"></i></div>
                   <h4>Penristek</h4>
                   <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                 </div>
               </a>
-              <?php endfor;?>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/miba" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>Miba</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>Sosial</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>KWU</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>PSDMO</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>Humas</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>Medinfo</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box icon-box">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4>Pasif</h4>
+                  <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+              </a>
           </div>
         </div>
 
