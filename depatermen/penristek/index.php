@@ -364,7 +364,7 @@ $rootdir = "../..";
               data-aos-delay="100"
             >
               <div class="box featured">
-                <h4>Technoclub</h4>
+                <h4>Panitia Technoclub</h4>
                 <ul>
                   <li>
                     <i class="bx bx-check"></i> Quam adipiscing vitae proin
@@ -387,7 +387,7 @@ $rootdir = "../..";
                   type="button"
                   class="buy-btn"
                   data-bs-toggle="modal"
-                  data-bs-target="#techoclub-form"
+                  data-bs-target="#panitia-techoclub-form"
                 >
                   Daftar Sekarang
                 </button>
@@ -711,20 +711,99 @@ $rootdir = "../..";
 
     </main><!-- End #main -->
 
-    <!-- ======= Footer ======= -->
-    <!-- <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+    <!-- ======= Modal Section ======= -->
+    <section>
+      <!-- Modal Peserta Technoclub -->
+      <div class="modal fade" id="techoclub-form" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <form action="" method="POST" class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Peserta Technoclub</h5>
+                      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <label for="NIM">NIM</label>
+                      <input type="number" class="form-control" name="NIM" id="NIM" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Nama">Nama</label>
+                      <input type="text" class="form-control" name="Nama" id="Nama" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="No_WA">Nomor WA</label>
+                      <input type="text" class="form-control" name="No_WA" id="No_WA" required>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                      <button type="submit" class="btn btn-primary" name="send-saran" value="saran">Kirim</button>
+                  </div>
+              </form>
           </div>
-        </div>
       </div>
-    </div> -->
+      <!-- Modal Panitia Technoclub -->
+      <div class="modal fade" id="panitia-techoclub-form" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <form action="" method="POST" class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Kepanitiaan Technoclub</h5>
+                      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <label for="NIM">NIM</label>
+                      <input type="number" class="form-control" name="NIM" id="NIM" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Nama">Nama</label>
+                      <input type="text" class="form-control" name="Nama" id="Nama" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="No_WA">Nomor WA</label>
+                      <input type="text" class="form-control" name="No_WA" id="No_WA" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Divisi_1">Divisi 1</label>
+                      <input type="text" class="form-control" name="Divisi_1" id="Divisi_1" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Pindah_Divisi">Bersedia dipindah divisi</label>
+                      <select class="form-select" name="Pindah_Divisi" id="Pindah_Divisi" required>
+                        <option value="Tidak">Tidak</option>
+                        <option value="Ya">Ya</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Divisi_2">Divisi 2</label>
+                      <input type="text" class="form-control" name="Divisi_2" id="Divisi_2">
+                    </div>
+                    <div class="form-group">
+                      <label for="Alasan_Divisi">Alasan Masuk Divisi</label>
+                      <input type="text" class="form-control" name="Alasan_Divisi" id="Alasan_Divisi" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Sadar_Daftar">Sadar Untuk Mendaftar</label>
+                      <select class="form-select" name="Sadar_Daftar" id="Sadar_Daftar" required>
+                        <option value="Tidak">Tidak</option>
+                        <option value="Ya">Ya</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                      <button type="submit" class="btn btn-primary" name="send-saran" value="saran">Kirim</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </section><!-- End Hero -->
+
+    <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="footer-top">
         <div class="container">
@@ -823,7 +902,7 @@ $rootdir = "../..";
   </div> -->
     <!-- End Footer -->
 
-    <div id="preloader"></div>
+    <!-- <div id="preloader"></div> -->
     <a
       href="#"
       class="back-to-top d-flex align-items-center justify-content-center"

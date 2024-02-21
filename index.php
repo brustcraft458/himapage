@@ -163,7 +163,7 @@ $rootdir = ".";
 
           </div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("<?=$rootdir?>/assets/img/logo/gantari.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" id="logo-gantari" style='background-image: url("<?=$rootdir?>/assets/img/logo/gantari.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
         </div>
 
       </div>
