@@ -22,6 +22,7 @@ $rootdir = "../..";
       rel="stylesheet"
     />
     <link rel="stylesheet" href="<?=$rootdir?>/assets/css/profil.css" />
+    <link rel="stylesheet" href="<?=$rootdir?>/assets/css/additional.css" />
     <!-- Vendor CSS Files -->
     <link href="<?=$rootdir?>/assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
@@ -131,8 +132,8 @@ $rootdir = "../..";
                       data-bs-toggle="collapse"
                       class="collapse"
                       data-bs-target="#accordion-list-1"
-                      ><span>01</span> Non consectetur a erat nam at lectus urna
-                      duis? <i class="bx bx-chevron-down icon-show"></i
+                      ><span>01</span> UTD 7
+                      <i class="bx bx-chevron-down icon-show"></i
                       ><i class="bx bx-chevron-up icon-close"></i
                     ></a>
                     <div
@@ -154,8 +155,8 @@ $rootdir = "../..";
                       data-bs-toggle="collapse"
                       data-bs-target="#accordion-list-2"
                       class="collapsed"
-                      ><span>02</span> Feugiat scelerisque varius morbi enim
-                      nunc? <i class="bx bx-chevron-down icon-show"></i
+                      ><span>02</span> Technoclub
+                      <i class="bx bx-chevron-down icon-show"></i
                       ><i class="bx bx-chevron-up icon-close"></i
                     ></a>
                     <div
@@ -179,8 +180,8 @@ $rootdir = "../..";
                       data-bs-toggle="collapse"
                       data-bs-target="#accordion-list-3"
                       class="collapsed"
-                      ><span>03</span> Dolor sit amet consectetur adipiscing
-                      elit? <i class="bx bx-chevron-down icon-show"></i
+                      ><span>03</span> Website Himatif
+                      <i class="bx bx-chevron-down icon-show"></i
                       ><i class="bx bx-chevron-up icon-close"></i
                     ></a>
                     <div
@@ -206,103 +207,38 @@ $rootdir = "../..";
       </section><!-- End Why Us Section -->
 
       <!-- ======= Team Section ======= -->
-      <section id="team" class="team bg-white">
+      <section id="team" class="team section-bg">
         <div class="container" data-aos="fade-up">
-          <div class="section-title">
+          <div class="section-title py-0">
             <h2>Anggota Penristek</h2>
           </div>
 
-          <div
-            class="w-100 container-profil d-flex align-items-start gap-3"
-            style="position: relative; top: -25px"
-          >
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-              <div class="member d-flex align-items-start">
-                <div class="pic" style="width: 120px; height: 120px">
-                  <img
-                    src="<?=$rootdir?>/assets/img/team/team-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info" style="">
-                  <h4>Gozali</h4>
-                  <span>Ketua Departemen</span>
+          <div class="gradient-pading-sec">
+            <div class="scrollbar d-flex flex-row gap-3">
+              <?php for ($x = 0; $x <= 10; $x++) : ?>
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="member d-flex align-items-start">
+                    <div class="pic" style="width: 120px; height: 120px">
+                      <img
+                        src="<?=$rootdir?>/assets/img/team/team-1.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="member-info" style="">
+                      <h4>Gozali</h4>
+                      <span>Ketua Departemen</span>
 
-                  <div class="social">
-                    <a href=""><i class="ri-twitter-fill"></i></a>
-                    <a href=""><i class="ri-facebook-fill"></i></a>
-                    <a href=""><i class="ri-instagram-fill"></i></a>
-                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                      <div class="social">
+                        <a href=""><i class="ri-twitter-fill"></i></a>
+                        <a href=""><i class="ri-facebook-fill"></i></a>
+                        <a href=""><i class="ri-instagram-fill"></i></a>
+                        <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-              <div class="member d-flex align-items-start">
-                <div class="pic" style="width: 120px; height: 120px">
-                  <img
-                    src="<?=$rootdir?>/assets/img/team/team-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info" style="">
-                  <h4>Gozali</h4>
-                  <span>Ketua Departemen</span>
-
-                  <div class="social">
-                    <a href=""><i class="ri-twitter-fill"></i></a>
-                    <a href=""><i class="ri-facebook-fill"></i></a>
-                    <a href=""><i class="ri-instagram-fill"></i></a>
-                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-              <div class="member d-flex align-items-start">
-                <div class="pic" style="width: 120px; height: 120px">
-                  <img
-                    src="<?=$rootdir?>/assets/img/team/team-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info" style="">
-                  <h4>Gozali</h4>
-                  <span>Ketua Departemen</span>
-
-                  <div class="social">
-                    <a href=""><i class="ri-twitter-fill"></i></a>
-                    <a href=""><i class="ri-facebook-fill"></i></a>
-                    <a href=""><i class="ri-instagram-fill"></i></a>
-                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-              <div class="member d-flex align-items-start">
-                <div class="pic" style="width: 120px; height: 120px">
-                  <img
-                    src="<?=$rootdir?>/assets/img/team/team-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info" style="">
-                  <h4>Gozali</h4>
-                  <span>Ketua Departemen</span>
-
-                  <div class="social">
-                    <a href=""><i class="ri-twitter-fill"></i></a>
-                    <a href=""><i class="ri-facebook-fill"></i></a>
-                    <a href=""><i class="ri-instagram-fill"></i></a>
-                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                  </div>
-                </div>
-              </div>
+              <?php endfor;?>
             </div>
           </div>
         </div>
@@ -310,122 +246,52 @@ $rootdir = "../..";
       <!-- End Team Section -->
 
       <!-- ======= Pricing Section ======= -->
-      <section id="pricing" class="pricing section-bg">
+      <section id="pricing" class="pricing">
         <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Event Himatif</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+          <div class="section-title py-0">
+            <h2>Event Penristek</h2>
           </div>
 
-          <div class="container-profil d-flex align-items-start gap-3">
-            <div
-              class="card-profil col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="box featured">
-                <h4>Technoclub</h4>
-                <ul>
-                  <li>
-                    <i class="bx bx-check"></i> Quam adipiscing vitae proin
-                  </li>
-                  <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                  <li>
-                    <i class="bx bx-check"></i> Nulla at volutpat diam uteera
-                  </li>
-                  <li class="na">
-                    <i class="bx bx-x"></i>
-                    <span>Pharetra massa massa ultricies</span>
-                  </li>
-                  <li class="na">
-                    <i class="bx bx-x"></i>
-                    <span>Massa ultricies mi quis hendrerit</span>
-                  </li>
-                </ul>
-                <a href="#" class=""></a>
-                <button
-                  type="button"
-                  class="buy-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#techoclub-form"
-                >
-                  Daftar Sekarang
-                </button>
+          <div class="gradient-pading">
+            <div class="scrollbar d-flex flex-row gap-4">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="box featured">
+                  <h4>Registrasi Event</h4>
+                  <ul>
+                    <li><i class="bx bx-check"></i>Menambah Wawasan</li>
+                    <li><i class="bx bx-check"></i>Mendapatkan Sertifikat</li>
+                    <li class="na"><i class="bx bx-x"></i><span>Mendapatkan SK</span></li>
+                    <li><i class="bx bx-check"></i>Membangun Relasi</li>
+                    <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                  </ul>
+                  <a href="<?=$rootdir?>/redirect/event.php" class="buy-btn">Lihat Sekarang</a>
+                </div>
               </div>
-            </div>
-            <div
-              class="card-profil col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="box featured">
-                <h4>Technoclub</h4>
-                <ul>
-                  <li>
-                    <i class="bx bx-check"></i> Quam adipiscing vitae proin
-                  </li>
-                  <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                  <li>
-                    <i class="bx bx-check"></i> Nulla at volutpat diam uteera
-                  </li>
-                  <li class="na">
-                    <i class="bx bx-x"></i>
-                    <span>Pharetra massa massa ultricies</span>
-                  </li>
-                  <li class="na">
-                    <i class="bx bx-x"></i>
-                    <span>Massa ultricies mi quis hendrerit</span>
-                  </li>
-                </ul>
-                <a href="#" class=""></a>
-                <button
-                  type="button"
-                  class="buy-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#techoclub-form"
-                >
-                  Daftar Sekarang
-                </button>
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">
+                  <h4>Oprec Kepanitian</h4>
+                  <ul>
+                    <li><i class="bx bx-check"></i>Menambah Wawasan</li>
+                    <li><i class="bx bx-check"></i>Mendapatkan Sertifikat</li>
+                    <li><i class="bx bx-check"></i>Mendapatkan SK</li>
+                    <li><i class="bx bx-check"></i>Membangun Relasi</li>
+                    <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                  </ul>
+                  <a href="<?=$rootdir?>/redirect/panitia.php" class="buy-btn">Lihat Sekarang</a>
+                </div>
               </div>
-            </div>
-            <div
-              class="card-profil col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="box featured">
-                <h4>Technoclub</h4>
-                <ul>
-                  <li>
-                    <i class="bx bx-check"></i> Quam adipiscing vitae proin
-                  </li>
-                  <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                  <li>
-                    <i class="bx bx-check"></i> Nulla at volutpat diam uteera
-                  </li>
-                  <li class="na">
-                    <i class="bx bx-x"></i>
-                    <span>Pharetra massa massa ultricies</span>
-                  </li>
-                  <li class="na">
-                    <i class="bx bx-x"></i>
-                    <span>Massa ultricies mi quis hendrerit</span>
-                  </li>
-                </ul>
-                <a href="#" class=""></a>
-                <button
-                  type="button"
-                  class="buy-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#techoclub-form"
-                >
-                  Daftar Sekarang
-                </button>
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">
+                  <h4>Himatif Store</h4>
+                  <ul>
+                    <li><i class="bx bx-check"></i>Mendapatkan PDH</li>
+                    <li><i class="bx bx-check"></i>Mendapatkan Merchandines</li>
+                    <li class="na"><i class="bx bx-x"></i> <span>Nulla at volutpat diam uteera</span></li>
+                    <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                    <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                  </ul>
+                  <a href="<?=$rootdir?>/redirect/store.php" class="buy-btn">Lihat Sekarang</a>
+                </div>
               </div>
             </div>
           </div>
@@ -434,16 +300,10 @@ $rootdir = "../..";
       <!-- End Pricing Section -->
 
       <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio section-bg">
+      <section id="portfolio" class="portfolio">
         <div class="container" data-aos="fade-up">
-          <div class="section-title">
+          <div class="section-title py-0">
             <h2>Dokumentasi</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
           </div>
 
           <ul
