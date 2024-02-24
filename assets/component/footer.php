@@ -29,89 +29,56 @@
 
       <div class="col-lg-3 col-md-6 footer-links">
         <h4>Team Development</h4>
-        
-        <div>
-          <p class="m-0">
-            <i
-              class="bx bx-chevron-right fw-bold"
-              style="color: var(--light-blue)"
-            ></i>
-            <button
-              class="btn btn-primary border-0 p-0"
-              style="background: transparent; color: #777777"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#fullStack"
-              aria-expanded="false"
-              aria-controls="fullStack"
-            >
-              Full Stack
-            </button>
-          </p>
-          <div class="collapse mb-3" id="fullStack">
-            <ol>
-              <li>Deandra Julian Rahenda</li>
-              <li>Said Hamzah</li>
-              <li>Gozali</li>
-            </ol>
+
+        <div class="footer-container-list">
+          <div class="footer-list">
+            <div class="ftext">
+              <i class="bx bx-chevron-right"></i>
+              <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#footer-dev-1" aria-expanded="false" aria-controls="fullStack">
+                Team Manager
+              </button>
+            </div>
+            <div class="collapse mb-3" id="footer-dev-1">
+              <ol>
+                <li>Deandra Julian Rahenda</li>
+                <li>Said Hamzah</li>
+                <li>Gozali</li>
+              </ol>
+            </div>
           </div>
-        </div>
 
-        <div class="mt-2">
-          <p class="m-0">
-            <i
-              class="bx bx-chevron-right fw-bold"
-              style="color: var(--light-blue)"
-            ></i>
-            <button
-              class="btn btn-primary border-0 p-0"
-              style="background: transparent; color: #777777"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseExample"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              Front End
-            </button>
-          </p>
-
-          <div class="collapse mb-3" id="collapseExample">
-            <ol>
-              <li>Akbar</li>
-              <li>Bisma Candra Gumilang</li>
-              <li>Deni Rizki Agustian</li>
-              <li>Rangga</li>
-            </ol>
+          <div class="footer-list">
+            <div class="ftext">
+              <i class="bx bx-chevron-right"></i>
+              <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#footer-dev-2" aria-expanded="false" aria-controls="fullStack">
+                Front End
+              </button>
+            </div>
+            <div class="collapse mb-3" id="footer-dev-2">
+              <ol>
+                <li>Akbar Rahmat Hidayat M</li>
+                <li>Bisma Candra Gumilang</li>
+                <li>Deni Rizki Agustian</li>
+                <li>Rangga</li>
+              </ol>
+            </div>
           </div>
-        </div>
 
-        <div class="mt-2">
-          <p class="m-0">
-            <i
-              class="bx bx-chevron-right fw-bold"
-              style="color: var(--light-blue)"
-            ></i>
-            <button
-              class="btn btn-primary border-0 p-0"
-              style="background: transparent; color: #777777"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#backEnd"
-              aria-expanded="false"
-              aria-controls="backEnd"
-            >
-              Back End
-            </button>
-          </p>
-          <div class="collapse mb-3" id="backEnd">
-            <ol>
-              <li>Deandra Julian Rahenda</li>
-              <li>Akbar Rahmat Hidayat M</li>
-              <li>Gozali</li>
-              <li>Harist Rahman Safari</li>
-              <li>Said Hamzah</li>
-            </ol>
+          <div class="footer-list">
+            <div class="ftext">
+              <i class="bx bx-chevron-right"></i>
+              <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#footer-dev-3" aria-expanded="false" aria-controls="fullStack">
+                Back End
+              </button>
+            </div>
+            <div class="collapse mb-3" id="footer-dev-3">
+              <ol>
+                <li>Deandra Julian Rahenda</li>
+                <li>Gozali</li>
+                <li>Harist Rahman Safari</li>
+                <li>Said Hamzah</li>
+              </ol>
+            </div>
           </div>
         </div>
       </div>
