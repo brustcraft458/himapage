@@ -9,7 +9,7 @@ $rootdir = "../..";
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>Depatermen Penristek</title>
+  <title>Depatermen Kwu</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -33,8 +33,8 @@ $rootdir = "../..";
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
           data-aos="fade-up" data-aos-delay="200">
-          <h1>DEPARTEMEN PENRISTEK</h1>
-          <h2>PENDIDIKAN RISET DAN TEKNOLOGI</h2>
+          <h1>DEPARTEMEN KWU</h1>
+          <h2>KEWIRAUSAHAAN</h2>
           <p class="text-white">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Repellendus dolor iusto, obcaecati quasi ut facilis architecto
@@ -75,7 +75,7 @@ $rootdir = "../..";
               <ul>
                 <li>
                   <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">
-                    <span>01</span>UTD 7<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
+                    <span>01</span>Himatif Store<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
                   </a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                     <p>
@@ -89,7 +89,7 @@ $rootdir = "../..";
 
                 <li>
                   <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">
-                    <span>02</span>Technoclub<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
+                    <span>02</span>IT Klinik<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
                   </a>
                   <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                     <p>
@@ -105,7 +105,7 @@ $rootdir = "../..";
 
                 <li>
                   <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">
-                    <span>03</span>Website Himatif<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
+                    <span>03</span>Webinar Kewirausahaan<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
                   </a>
                   <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                     <p>
@@ -129,7 +129,7 @@ $rootdir = "../..";
     <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title py-0">
-          <h2>Anggota Penristek</h2>
+          <h2>Anggota KWU</h2>
         </div>
 
         <div class="gradient-pading-sec">
@@ -162,29 +162,44 @@ $rootdir = "../..";
     <section id="event" class="pricing">
       <div class="container" data-aos="fade-up">
         <div class="section-title py-0">
-          <h2>Event Penristek</h2>
+          <h2>Store & Event KWU</h2>
         </div>
 
         <div class="gradient-pading">
           <div class="scrollbar d-flex flex-row gap-4">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
               <div class="box featured">
-                <h4>Technoclub</h4>
+                <h4 style="font-size: 31px">Pemesanan PDH</h4>
+                <ul>
+                  <li><i class="bx bx-check"></i>Terlihat Keren</li>
+                  <li><i class="bx bx-check"></i>Mendapatkan Kehangatan</li>
+                  <li class="na"><i class="bx bx-x"></i><span>Mendapatkan Pasangan</span></li>
+                  <li><i class="bx bx-check"></i>Mendapatkan Merchandines</li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                </ul>
+                <button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#pesanpdh-form">
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="box">
+                <h4 style="font-size: 31px">IT Klinik</h4>
                 <ul>
                   <li><i class="bx bx-check"></i>Menambah Wawasan</li>
                   <li><i class="bx bx-check"></i>Mendapatkan Sertifikat</li>
-                  <li class="na"><i class="bx bx-x"></i><span>Mendapatkan SK</span></li>
+                  <li class="na"><i class="bx bx-x"></i><span>Membangun Rasa Cinta</span></li>
                   <li><i class="bx bx-check"></i>Membangun Relasi</li>
                   <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 </ul>
-                <button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#techoclub-form">
+                <button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#itklinik-form">
                   Daftar Sekarang
                 </button>
               </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
               <div class="box">
-                <h4>UTD 7</h4>
+                <h4 style="font-size: 31px">Webinar Kewirausahaan</h4>
                 <ul>
                   <li><i class="bx bx-check"></i>Menambah Wawasan</li>
                   <li><i class="bx bx-check"></i>Mendapatkan Sertifikat</li>
@@ -293,57 +308,104 @@ $rootdir = "../..";
   </main><!-- End #main -->
 
   <modal>
-    <!-- Technoclub -->
-    <div class="modal fade" id="techoclub-form" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Pemesanan PDH -->
+    <div class="modal fade" id="pesanpdh-form" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <form action="" method="POST" class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Pendaftaran Technoclub</h5>
+            <h5 class="modal-title">Pemesanan PDH</h5>
             <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <div>
-              <div class="form-group">
-                <label for="nama" class="col-form-label">Nama</label>
-                <input type="nama" class="form-control text-uppercase" id="nama" name="nama" required />
-              </div>
-              <div class="form-group">
-                <label for="nim" class="col-form-label">NIM</label>
-                <input type="number" class="form-control text-uppercase" id="nim" name="nim" required />
-              </div>
-              <div class="form-group">
-                <label for="email" class="col-form-label">Email</label>
-                <input type="email" class="form-control text-uppercase" id="email" name="email" required />
-              </div>
-              <div class="form-group">
-                <label for="kelas" class="col-form-label">Kelas</label>
-                <input type="text" class="form-control text-uppercase" id="kelas" name="kelas" required />
-              </div>
-              <div class="form-group">
-                <label for="angkatan" class="col-form-label">Angkatan</label>
-                <input type="text" class="form-control text-uppercase" id="angkatan" name="angkatan" required />
-              </div>
-              <div class="form-group">
-                <label for="no_wa" class="col-form-label">No Whatsapp</label>
-                <input type="number" class="form-control text-uppercase" id="no_wa" name="no_wa" required />
-              </div>
-              <div class="form-group">
-                <label for="batch" class="col-form-label">Batch</label>
-                <select class="form-select" aria-label="Default select example" name="batch" required>
-                  <option selected>Gelombang</option>
-                  <option value="1">1. Web Development</option>
-                  <option value="2">2. Jaringan Komputer</option>
-                </select>
-              </div>
+            <div class="form-group">
+              <label for="nama" class="col-form-label">Nama</label>
+              <input type="text" class="form-control text-uppercase" id="nama" name="nama" required />
+            </div>
+            <div class="form-group">
+              <label for="nim" class="col-form-label">Nim</label>
+              <input type="number" class="form-control text-uppercase" id="nim" name="nim" required />
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-form-label">Email</label>
+              <input type="email" class="form-control text-uppercase" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="kelas" class="col-form-label">Kelas</label>
+              <input type="text" class="form-control text-uppercase" id="kelas" name="kelas" required />
+            </div>
+            <div class="form-group">
+              <label for="angkatan" class="col-form-label">Angkatan</label>
+              <input type="text" class="form-control text-uppercase" id="angkatan" name="angkatan" required/>
+            </div>
+            <div class="form-group">
+              <label for="no_wa" class="col-form-label">No Whatsapp</label>
+              <input type="number" class="form-control text-uppercase" id="no_wa" name="no_wa" required />
+            </div>
+            <div class="form-group">
+              <label for="ukuran" class="col-form-label">Ukuran</label>
+              <select class="form-select" aria-label="Default select example" required>
+                <option selected>Pilih Ukuran</option>
+                <option value="1">M</option>
+                <option value="2">L</option>
+                <option value="3">XL</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bukti_pembayaran" class="col-form-label">Bukti Pembayaran</label>
+              <input type="file" class="form-control" id="bukti_pembayaran" name="bukti_pembayaran" accept=".png, .jpeg, .jpg" required />
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
               Batal
             </button>
-            <button type="submit" class="btn btn-primary" name="send_form" value="technoclub">>
+            <button type="submit" class="btn btn-primary" name="send_form" value="pemesanan_pdh">
+              Kirim
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- IT Klinik -->
+    <div class="modal fade" id="itklinik-form" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <form action="" method="POST" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Konsultasi IT Klinik</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="nama" class="col-form-label">Nama</label>
+              <input type="text" class="form-control text-uppercase" id="nama" name="nama" required />
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-form-label">Email</label>
+              <input type="email" class="form-control text-uppercase" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="no_wa" class="col-form-label">No Whatsapp</label>
+              <input type="number" class="form-control text-uppercase" id="no_wa" name="no_wa" required />
+            </div>
+            <div class="form-group">
+              <label for="jenis" class="col-form-label">Jenis</label>
+              <input type="text" class="form-control text-uppercase" id="jenis" name="jenis" required />
+            </div>
+            <div class="form-group">
+              <label for="kendala" class="col-form-label">Kendala</label>
+              <input type="text" class="form-control text-uppercase" id="kendala" name="kendala" required />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Batal
+            </button>
+            <button type="submit" class="btn btn-primary" name="send_form" value="it_klinik">
               Kirim
             </button>
           </div>

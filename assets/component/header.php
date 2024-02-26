@@ -19,9 +19,9 @@
         </li>
         <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="<?=$rootdir?>/">Registrasi Event</a></li>
-            <li><a href="<?=$rootdir?>/">Oprec Kepanitian</a></li>
-            <li><a href="<?=$rootdir?>/">Himatif Store</a></li>
+            <li><a href="<?=$rootdir?>/redirect.php?form=event">Registrasi Event</a></li>
+            <li><a href="<?=$rootdir?>/redirect.php?form=panitia">Oprec Kepanitian</a></li>
+            <li><a href="<?=$rootdir?>/redirect.php?form=store">Himatif Store</a></li>
           </ul>
         </li>
       </ul>
