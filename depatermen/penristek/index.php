@@ -169,7 +169,7 @@ $rootdir = "../..";
           <div class="scrollbar d-flex flex-row gap-4">
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <div class="box featured">
-                <h4>Technoclub</h4>
+                <h4>Panitia Technoclub</h4>
                 <ul>
                   <li><i class="bx bx-check"></i>Menambah Wawasan</li>
                   <li><i class="bx bx-check"></i>Mendapatkan Sertifikat</li>
@@ -272,7 +272,7 @@ $rootdir = "../..";
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-
+          
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-img">
               <img src="<?= $rootdir ?>/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="" />
@@ -286,7 +286,6 @@ $rootdir = "../..";
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-        </div>
       </div>
     </section><!-- End Portfolio Section -->
 
