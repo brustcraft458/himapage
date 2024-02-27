@@ -19,23 +19,66 @@
       <div class="col-lg-3 col-md-6 footer-links">
         <h4>Useful Links</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="<?=$rootdir?>">Home</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="<?=$rootdir?>/#depatermen">Depatermen</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="<?=$rootdir?>/#layanan">Layanan</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-6 footer-links">
-        <h4>Our Services</h4>
-        <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-        </ul>
+        <h4>Team Development</h4>
+
+        <div class="footer-container-list">
+          <div class="footer-list">
+            <div class="ftext">
+              <i class="bx bx-chevron-right"></i>
+              <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#footer-dev-1" aria-expanded="false" aria-controls="fullStack">
+                Team Manager
+              </button>
+            </div>
+            <div class="collapse mb-3" id="footer-dev-1">
+              <ol>
+                <li>Deandra Julian Rahenda</li>
+                <li>Said Hamzah</li>
+                <li>Gozali</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="footer-list">
+            <div class="ftext">
+              <i class="bx bx-chevron-right"></i>
+              <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#footer-dev-2" aria-expanded="false" aria-controls="fullStack">
+                Front End
+              </button>
+            </div>
+            <div class="collapse mb-3" id="footer-dev-2">
+              <ol>
+                <li>Akbar Rahmat Hidayat M</li>
+                <li>Bisma Candra Gumilang</li>
+                <li>Deni Rizki Agustian</li>
+                <li>Rangga</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="footer-list">
+            <div class="ftext">
+              <i class="bx bx-chevron-right"></i>
+              <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#footer-dev-3" aria-expanded="false" aria-controls="fullStack">
+                Back End
+              </button>
+            </div>
+            <div class="collapse mb-3" id="footer-dev-3">
+              <ol>
+                <li>Deandra Julian Rahenda</li>
+                <li>Gozali</li>
+                <li>Harist Rahman Safari</li>
+                <li>Said Hamzah</li>
+              </ol>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="col-lg-3 col-md-6 footer-links">

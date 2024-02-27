@@ -294,7 +294,7 @@ $rootdir = ".";
                   <li><i class="bx bx-check"></i>Membangun Relasi</li>
                   <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 </ul>
-                <a href="<?=$rootdir?>/redirect/event.php" class="buy-btn">Lihat Sekarang</a>
+                <a href="<?=$rootdir?>/redirect.php?form=event" class="buy-btn">Lihat Sekarang</a>
               </div>
             </div>
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
@@ -307,7 +307,7 @@ $rootdir = ".";
                   <li><i class="bx bx-check"></i>Membangun Relasi</li>
                   <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
                 </ul>
-                <a href="<?=$rootdir?>/redirect/panitia.php" class="buy-btn">Lihat Sekarang</a>
+                <a href="<?=$rootdir?>/redirect.php?form=panitia" class="buy-btn">Lihat Sekarang</a>
               </div>
             </div>
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
@@ -320,7 +320,7 @@ $rootdir = ".";
                   <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                   <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
                 </ul>
-                <a href="<?=$rootdir?>/redirect/store.php" class="buy-btn">Lihat Sekarang</a>
+                <a href="<?=$rootdir?>/redirect.php?form=store" class="buy-btn">Lihat Sekarang</a>
               </div>
             </div>
           </div>

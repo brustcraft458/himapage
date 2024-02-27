@@ -51,7 +51,6 @@
 
 .gradient-pading-sec::after {
   background: linear-gradient(90deg, rgba(243, 245, 250, 1) 0%, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%, rgba(243, 245, 250, 1) 100%);
-  /* background: rgb(243, 245, 250); */
 }
 
 .scrollbar {
@@ -70,6 +69,40 @@
 
 .scrollbar::-webkit-scrollbar-thumb {
   background-color: #47b2e4c2;
+}
+
+.footer-container-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.footer-list .ftext {
+  display: flex;
+  align-items: center;
+}
+
+.footer-list .ftext i {
+  padding-right: 2px;
+  color: var(--light-blue);
+  font-size: 18px;
+  color: var(--light-blue);
+}
+
+.footer-list .ftext button {
+  font-size: 14px;
+  border: none;
+  padding: 0;
+  color: #777777;
+  background: none;
+}
+
+.footer-list .ftext button:hover {
+  color: var(--light-blue);
+}
+
+.footer-list .ftext i {
+  color: var(--light-blue);
 }
 
 @media (max-width: 994px) {
