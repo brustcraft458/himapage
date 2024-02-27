@@ -17,4 +17,4 @@ use App\Http\Controllers\TestController;
 */
 
 Route::resource('/', UserHomeController::class);
-Route::resource('/depatermen/{name}', UserDepatermenController::class);
+Route::resource('/depatermen/{nama}', UserDepatermenController::class);

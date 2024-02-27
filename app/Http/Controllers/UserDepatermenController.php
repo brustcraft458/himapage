@@ -9,10 +9,16 @@ class UserDepatermenController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($name)
+    public function index($nama)
     {
         // var_dump($name);
-        return view('user.depatermen');
+        $depatermen = [
+            "nama" => $nama,
+            "nama_lengkap" => $nama,
+        ];
+        return view('user.depatermen', [
+            "depatermen" => $depatermen
+        ]);
     }
 
     /**
