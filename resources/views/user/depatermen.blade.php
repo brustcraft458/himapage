@@ -1,7 +1,3 @@
-<?php
-$rootdir = "../..";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +9,7 @@ $rootdir = "../..";
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <?php require_once("$rootdir/assets/component/head-res.php"); ?>
+  <?= view('user.component.head-res'); ?>
 
   <!-- =======================================================
   * Template Name: Arsha
@@ -25,7 +21,7 @@ $rootdir = "../..";
 </head>
 
 <body>
-  <?php require_once("$rootdir/assets/component/header.php"); ?>
+  <?= view('user.component.header'); ?>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -47,7 +43,7 @@ $rootdir = "../..";
           </div> -->
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="<?= $rootdir ?>/assets/img/departemen/1708172657680.png"
+          <img src="{{url('/assets/img/departemen/1708172657680.png')}}"
             class="depatermen-img img-fluid animated rounded" alt="" />
         </div>
       </div>
@@ -138,7 +134,7 @@ $rootdir = "../..";
               <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
                 <div class="member d-flex align-items-start">
                   <div class="pic" style="width: 120px; height: 120px">
-                    <img src="<?= $rootdir ?>/assets/img/team/team-1.jpg" class="img-fluid" alt="" />
+                    <img src="{{url('/assets/img/team/team-1.jpg')}}" class="img-fluid" alt="" />
                   </div>
                   <div class="member-info" style="">
                     <h4>Gozali</h4>
@@ -219,12 +215,12 @@ $rootdir = "../..";
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-img">
-              <img src="<?= $rootdir ?>/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
+              <img src="{{url('/assets/img/portfolio/portfolio-1.jpg')}}" class="img-fluid" alt="" />
             </div>
             <div class="portfolio-info">
               <h4>App 1</h4>
               <p>App</p>
-              <a href="<?= $rootdir ?>/assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1">
+              <a href="{{url('/assets/img/portfolio/portfolio-1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1">
                 <i class="bx bx-plus"></i>
               </a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
@@ -233,12 +229,12 @@ $rootdir = "../..";
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-img">
-              <img src="<?= $rootdir ?>/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="" />
+              <img src="{{url('/assets/img/portfolio/portfolio-2.jpg')}}" class="img-fluid" alt="" />
             </div>
             <div class="portfolio-info">
               <h4>Web 3</h4>
               <p>Web</p>
-              <a href="<?= $rootdir ?>/assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3">
+              <a href="{{url('/assets/img/portfolio/portfolio-2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3">
                 <i class="bx bx-plus"></i>
               </a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
@@ -247,12 +243,12 @@ $rootdir = "../..";
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-img">
-              <img src="<?= $rootdir ?>/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="" />
+              <img src="{{url('/assets/img/portfolio/portfolio-3.jpg')}}" class="img-fluid" alt="" />
             </div>
             <div class="portfolio-info">
               <h4>App 2</h4>
               <p>App</p>
-              <a href="<?= $rootdir ?>/assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2">
+              <a href="{{url('/assets/img/portfolio/portfolio-3.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2">
                 <i class="bx bx-plus"></i>
               </a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
@@ -261,26 +257,26 @@ $rootdir = "../..";
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-img">
-              <img src="<?= $rootdir ?>/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="" />
+              <img src="{{url('/assets/img/portfolio/portfolio-4.jpg')}}" class="img-fluid" alt="" />
             </div>
             <div class="portfolio-info">
               <h4>Card 2</h4>
               <p>Card</p>
-              <a href="<?= $rootdir ?>/assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2">
+              <a href="{{url('/assets/img/portfolio/portfolio-4.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2">
                 <i class="bx bx-plus"></i>
               </a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-img">
-              <img src="<?= $rootdir ?>/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="" />
+              <img src="{{url('/assets/img/portfolio/portfolio-5.jpg')}}" class="img-fluid" alt="" />
             </div>
             <div class="portfolio-info">
               <h4>Web 2</h4>
               <p>Web</p>
-              <a href="<?= $rootdir ?>/assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2">
+              <a href="{{url('/assets/img/portfolio/portfolio-5.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2">
                 <i class="bx bx-plus"></i>
               </a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
@@ -351,9 +347,9 @@ $rootdir = "../..";
     </div>
   </modal>
 
-  <?php require_once("$rootdir/assets/component/footer.php"); ?>
+  <?= view('user.component.footer'); ?>
 
-  <?php require_once("$rootdir/assets/component/footer-res.php"); ?>
+  <?= view('user.component.footer-res'); ?>
 </body>
 
 </html>

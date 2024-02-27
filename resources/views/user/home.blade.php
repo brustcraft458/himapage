@@ -1,7 +1,3 @@
-<?php
-$rootdir = ".";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +9,7 @@ $rootdir = ".";
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <?php require_once("$rootdir/assets/component/head-res.php") ?>
+  <?= view('user.component.head-res') ?>
 
   <!-- =======================================================
   * Template Name: Arsha
@@ -25,7 +21,7 @@ $rootdir = ".";
 </head>
 
 <body>
-  <?php require_once("$rootdir/assets/component/header.php"); ?>
+  <?= view('user.component.header'); ?>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -41,7 +37,6 @@ $rootdir = ".";
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <!-- <img src="<?=$rootdir?>/assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
           <iframe class="hero-video img-fluid rounded-3" src="https://www.youtube.com/embed/1b025-rE5e4?si=wMmibozWgy6yqeoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
@@ -56,13 +51,13 @@ $rootdir = ".";
       <div class="container">
         <div class="d-flex align-items-center justify-content-center" data-aos="zoom-in">
           <div class="">
-            <img src="<?=$rootdir?>/assets/img/logo/fik.png" width="140" class="img-fluid" alt="">
+            <img src="{{url('/assets/img/logo/fik.png')}}" width="140" class="img-fluid" alt="">
           </div>
           <div class="">
-            <img src="<?=$rootdir?>/assets/img/logo/himatif.png" width="140" class="img-fluid" style="scale: 1.8" alt="">
+            <img src="{{url('/assets/img/logo/himatif.png')}}" width="140" class="img-fluid" style="scale: 1.8" alt="">
           </div>
           <div class="">
-            <img src="<?=$rootdir?>/assets/img/logo/ubp.png" width="140" class="img-fluid" alt="">
+            <img src="{{url('/assets/img/logo/ubp.png')}}" width="140" class="img-fluid" alt="">
           </div>
         </div>
 
@@ -163,7 +158,7 @@ $rootdir = ".";
 
           </div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" id="logo-gantari" style='background-image: url("<?=$rootdir?>/assets/img/logo/gantari.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" id="logo-gantari" style='background-image: url("{{url('/assets/img/logo/gantari.png')}}");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
         </div>
 
       </div>
@@ -179,56 +174,56 @@ $rootdir = ".";
 
         <div class="gradient-pading">
           <div class="scrollbar d-flex flex-row gap-3 bd-highlight mb-3">
-              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/penristek" data-aos="zoom-in" data-aos-delay="200">
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="{{url('/depatermen/penristek')}}" data-aos="zoom-in" data-aos-delay="200">
                 <div class="box icon-box">
                   <div class="icon"><i class="bx bx-file"></i></div>
                   <h4>Penristek</h4>
                   <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                 </div>
               </a>
-              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/miba" data-aos="zoom-in" data-aos-delay="200">
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="{{url('/depatermen/miba')}}" data-aos="zoom-in" data-aos-delay="200">
                 <div class="box icon-box">
                   <div class="icon"><i class="bx bx-file"></i></div>
                   <h4>Miba</h4>
                   <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                 </div>
               </a>
-              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="{{url('/depatermen/sosial')}}" data-aos="zoom-in" data-aos-delay="200">
                 <div class="box icon-box">
                   <div class="icon"><i class="bx bx-file"></i></div>
                   <h4>Sosial</h4>
                   <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                 </div>
               </a>
-              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="{{url('/depatermen/sosial')}}" data-aos="zoom-in" data-aos-delay="200">
                 <div class="box icon-box">
                   <div class="icon"><i class="bx bx-file"></i></div>
                   <h4>KWU</h4>
                   <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                 </div>
               </a>
-              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="{{url('/depatermen/sosial')}}" data-aos="zoom-in" data-aos-delay="200">
                 <div class="box icon-box">
                   <div class="icon"><i class="bx bx-file"></i></div>
                   <h4>PSDMO</h4>
                   <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                 </div>
               </a>
-              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="{{url('/depatermen/sosial')}}" data-aos="zoom-in" data-aos-delay="200">
                 <div class="box icon-box">
                   <div class="icon"><i class="bx bx-file"></i></div>
                   <h4>Humas</h4>
                   <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                 </div>
               </a>
-              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="{{url('/depatermen/sosial')}}" data-aos="zoom-in" data-aos-delay="200">
                 <div class="box icon-box">
                   <div class="icon"><i class="bx bx-file"></i></div>
                   <h4>Medinfo</h4>
                   <p class="text-dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                 </div>
               </a>
-              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="<?=$rootdir?>/depatermen/sosial" data-aos="zoom-in" data-aos-delay="200">
+              <a class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" href="{{url('/depatermen/sosial')}}" data-aos="zoom-in" data-aos-delay="200">
                 <div class="box icon-box">
                   <div class="icon"><i class="bx bx-file"></i></div>
                   <h4>Pasif</h4>
@@ -254,7 +249,7 @@ $rootdir = ".";
             <?php for ($x = 0; $x <= 10; $x++) : ?>
               <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
                 <div class="box member d-flex align-items-start">
-                  <div class="pic"><img src="<?=$rootdir?>/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+                  <div class="pic"><img src="{{url('/assets/img/team/team-2.jpg')}}" class="img-fluid" alt=""></div>
                   <div class="member-info">
                     <h4>Sarah Jhonson</h4>
                     <span>Ketua Himatif</span>
@@ -294,7 +289,7 @@ $rootdir = ".";
                   <li><i class="bx bx-check"></i>Membangun Relasi</li>
                   <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 </ul>
-                <a href="<?=$rootdir?>/redirect.php?form=event" class="buy-btn">Lihat Sekarang</a>
+                <a href="{{url('/redirect.php?form=event')}}" class="buy-btn">Lihat Sekarang</a>
               </div>
             </div>
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
@@ -307,7 +302,7 @@ $rootdir = ".";
                   <li><i class="bx bx-check"></i>Membangun Relasi</li>
                   <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
                 </ul>
-                <a href="<?=$rootdir?>/redirect.php?form=panitia" class="buy-btn">Lihat Sekarang</a>
+                <a href="{{url('/redirect.php?form=panitia')}}" class="buy-btn">Lihat Sekarang</a>
               </div>
             </div>
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
@@ -320,7 +315,7 @@ $rootdir = ".";
                   <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                   <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
                 </ul>
-                <a href="<?=$rootdir?>/redirect.php?form=store" class="buy-btn">Lihat Sekarang</a>
+                <a href="{{url('/redirect.php?form=store')}}" class="buy-btn">Lihat Sekarang</a>
               </div>
             </div>
           </div>
@@ -401,12 +396,12 @@ $rootdir = ".";
 
   </main><!-- End #main -->
 
-  <?php require_once("$rootdir/assets/component/footer.php"); ?>
+  <?= view('user.component.footer'); ?>
 
   <!-- <div id="preloader"></div> -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <?php require_once("$rootdir/assets/component/footer-res.php"); ?>
+  <?= view('user.component.footer-res'); ?>
 
 </body>
 
